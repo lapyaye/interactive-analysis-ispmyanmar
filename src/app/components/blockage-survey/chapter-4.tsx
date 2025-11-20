@@ -7,9 +7,9 @@ import BarChartApp from '@/app/components/chart-ui/bar-chart'
 
 export default function Chapter4() {
   return (
-    <div id="livelihood-crisis" className={'mt-20'}>
+    <div id="livelihood-crisis" className={'mt-10'}>
       <h3 className={'font-medium flex items-center text-lg mb-5'}>
-        <RedSquareIcon /> 4. The Livelihood Crisis and Coping Methods
+        <RedSquareIcon /> 4. Daily Struggles and Coping Mechanisms
       </h3>
       <p className={'lg:w-full'}>
         The combination of a declining economy and ongoing armed conflicts has

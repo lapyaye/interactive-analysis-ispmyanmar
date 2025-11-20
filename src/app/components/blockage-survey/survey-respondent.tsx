@@ -5,10 +5,10 @@ import Image from 'next/image'
 
 export default function SurveyRespondent() {
   return (
-    <div id="respondent-info" className={'mt-20'}>
+    <div id="respondent-info" className={'mt-10'}>
       <h3 className={'font-medium flex items-center text-lg mb-5'}>
         <RedSquareIcon />
-        Survey Respondent Information
+        Respondent Demographics
       </h3>
       <p className={'mb-3'}>
         A total of 1,015 respondents participated in the survey.{' '}

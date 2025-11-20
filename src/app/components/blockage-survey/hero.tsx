@@ -13,7 +13,7 @@ export default function Hero() {
         >
           Raising the Lantern&apos;s Wick High
         </h1>
-        <div className={'px-3 py-5 my-8'}>
+        <div className={'px-3 lg:py-5 my-8'}>
           <p
             className={
               'text-xl lg:text-2xl text-white font-bold mb-3 backdrop-blur-lg lg:backdrop-blur-none'

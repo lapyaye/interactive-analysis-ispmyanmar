@@ -21,7 +21,7 @@ export default function Home() {
   const observer = useRef<IntersectionObserver | null>(null)
   useEffect(() => {
     // change page title
-    document.title = "Raising the Lamp's Wick High"
+    document.title = "Raising the Lantern's Wick High"
 
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
@@ -69,7 +69,7 @@ export default function Home() {
         >
           <div className={"sticky top-5"}>
               <div className={"bg-gray-100 p-3"}>
-                  <h2 className={'font-medium flex items-center text-lg mb-5'}>
+                  <h2 className={'font-medium flex items-center'}>
                       <RedSquareIcon /> Contents
                   </h2>
                   {navItems.map((item) => (

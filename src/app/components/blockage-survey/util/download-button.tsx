@@ -6,7 +6,7 @@ const baseClasses = `
     text-white
     text-center
     text-xs 
-    py-2 px-2 
+    p-2 
     rounded-sm 
     transition-colors 
     shadow-md 

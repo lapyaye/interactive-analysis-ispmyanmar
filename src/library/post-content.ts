@@ -35,7 +35,7 @@ export const posts: Post[] = [
     url: '/blockage-survey',
     postContent: {
       id: 2,
-      title: "Raising the Lamp's Wick High",
+      title: "Raising the Lantern's Wick High",
       subtitle:
         "A Survey of Myanmar's Socioeconomic Crisis and Public Resilience",
       description:

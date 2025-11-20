@@ -5,9 +5,9 @@ import DownloadButton from "@/app/components/blockage-survey/util/download-butto
 
 export default function Appendix() {
   return (
-    <div id={'appendix'} className={'mt-20'}>
+    <div id={'appendix'} className={'mt-10'}>
       <h3 className={'font-medium flex items-center text-lg mb-5'}>
-        <RedSquareIcon /> Appendix: Survey Methodology
+        <RedSquareIcon /> Survey Methodology
       </h3>
       <p className={'w-full mb-3'}>
         This brief survey was conducted to examine the impact of
@@ -68,7 +68,6 @@ export default function Appendix() {
       </p>
         <div className={'flex flex-col items-center lg:hidden'}>
             <DownloadSection content={downloadContents} />
-            {/*<DownloadButton text={'Download PDF'} href={'/'}/>*/}
         </div>
     </div>
   )

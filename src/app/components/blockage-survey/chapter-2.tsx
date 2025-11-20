@@ -9,9 +9,9 @@ import BarChartApp from '@/app/components/chart-ui/bar-chart'
 
 export default function Chapter2() {
   return (
-    <div id="healthcare-impacts" className={'mt-20'}>
+    <div id="healthcare-impacts" className={'mt-10'}>
       <h3 className={'font-medium flex items-center text-lg mb-5'}>
-        <RedSquareIcon /> 2. Impacts on the Healthcare Sector
+        <RedSquareIcon /> 2. Impacts on the Healthcare
       </h3>
       <p className={'lg:w-full mb-3'}>
         The healthcare sector has been hit hard by the crisis, leading to

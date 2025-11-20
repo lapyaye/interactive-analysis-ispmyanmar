@@ -11,7 +11,7 @@ import PieChartApp from '@/app/components/chart-ui/pie-chart'
 
 export default function Chapter5() {
   return (
-    <div id="support-capacity" className={'mt-20'}>
+    <div id="support-capacity" className={'mt-10'}>
       <h3 className={'font-medium flex items-center text-lg mb-5'}>
         <RedSquareIcon /> 5. Capacity for Support and Hope
       </h3>

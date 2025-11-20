@@ -1,6 +1,4 @@
 import { RedSquareIcon } from '@/app/components/chart-ui/red-square-icon'
-import DownloadSection from '@/app/components/blockage-survey/download'
-import { downloadContents } from '@/library/download-data'
 import DownloadButton from "@/app/components/blockage-survey/util/download-button";
 
 export default function ExecutiveSummary() {
@@ -10,7 +8,7 @@ export default function ExecutiveSummary() {
         A Survey of Myanmar&apos;s Socioeconomic Crisis and Public Resilience
       </h2>
       <h3 className={'font-medium flex items-center text-lg mb-5'}>
-        <RedSquareIcon /> Executive Summary
+        <RedSquareIcon /> Summary
       </h3>
       <p className={'mb-3'}>
         In late September 2025, ISP-Myanmar conducted a nationwide survey to

@@ -7,7 +7,7 @@ import {
 
 export default function Chapter3() {
   return (
-    <div id="livelihood-impacts" className={'mt-20'}>
+    <div id="livelihood-impacts" className={'mt-10'}>
       <h3 className={'font-medium flex items-center text-lg mb-5'}>
         <RedSquareIcon /> 3. Impacts on Livelihoods
       </h3>

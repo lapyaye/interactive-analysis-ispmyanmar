@@ -12,7 +12,7 @@ import BarChartApp from '@/app/components/chart-ui/bar-chart'
 
 export default function Chapter1() {
   return (
-    <div id="commodity-shortages" className={'mt-20'}>
+    <div id="commodity-shortages" className={'mt-10'}>
       <h3 className={'font-medium flex items-center text-lg mb-5'}>
         <RedSquareIcon /> 1. Commodity Shortages and Price Surge
       </h3>
