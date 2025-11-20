@@ -77,7 +77,7 @@ export default function Home() {
           </h1>
           <h3 className={'font-medium'}>Mar 2024 - Feb 2025</h3>
           <a
-            className="text-xs md:text-sm text-center block mb-5 font-bold cursor-pointer text-white mt-4 p-2 bg-red-500 md:w-1/3 rounded-md hover:bg-red-600"
+            className="text-xs md:text-sm text-center block mb-10 font-bold cursor-pointer text-white mt-4 p-2 bg-red-500 md:w-1/3 rounded-md hover:bg-red-600"
             href="#main"
           >
             ISP Socioeconomic Studies

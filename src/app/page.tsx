@@ -98,7 +98,7 @@ export default function Home() {
             <h1 className={'uppercase text-4xl font-bold my-12 text-gray-800'}>
               <span className={'text-pink-600'}>ISP</span> Interactive Analysis
             </h1>
-            <div className={'grid gap-10 grid-cols-1 md:grid-cols-2'}>
+            <div className={'grid gap-10 grid-cols-1 lg:grid-cols-2'}>
               <ContentCard content={posts} />
             </div>
           </section>
