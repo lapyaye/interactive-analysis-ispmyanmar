@@ -1,6 +1,7 @@
 import { RedSquareIcon } from '@/app/components/chart-ui/red-square-icon'
 import PieChartApp from '@/app/components/chart-ui/pie-chart'
 import { age, gender, income, location } from '@/library/blockage-data'
+import Image from 'next/image'
 
 export default function SurveyRespondent() {
   return (
@@ -23,9 +24,9 @@ export default function SurveyRespondent() {
         between 400,000 and 600,000 MMK,{' '}
         <span className={'font-bold'}>20 percent</span> between 200,000 and
         400,000 MMK, and <span className={'font-bold'}>18 percent</span> over 1
-        million MMK. The survey findings are organized into five sections.
+        million MMK.
       </p>
-      <div className={'chart-grid grid grid-cols-1 xl:grid-cols-2 gap-4 mt-10'}>
+      <div className={'chart-grid grid grid-cols-1 xl:grid-cols-2 gap-4 my-10'}>
         <div className={'border-t-2 border-blue-300 w-full'}>
           <PieChartApp props={gender} />
         </div>
@@ -38,6 +39,17 @@ export default function SurveyRespondent() {
         <div className={'border-t-2 border-blue-300 w-full'}>
           <PieChartApp props={age} />
         </div>
+      </div>
+      <div>
+        <Image
+          className={'w-full h-auto object-cover'}
+          src={
+            'https://ispmyanmar.com/wp-content/uploads/2025/11/Blockage-Survey_Eng_Map.jpg'
+          }
+          alt={'Blockage Survey Map'}
+          width={600}
+          height={700}
+        />
       </div>
     </div>
   )
