@@ -1,6 +1,7 @@
 import { RedSquareIcon } from '@/app/components/chart-ui/red-square-icon'
-import DownloadSection from "@/app/components/blockage-survey/download";
-import {downloadContents} from "@/library/download-data";
+import DownloadSection from '@/app/components/blockage-survey/download'
+import { downloadContents } from '@/library/download-data'
+import Image from 'next/image'
 
 export default function ExecutiveSummary() {
   return (
@@ -80,7 +81,18 @@ export default function ExecutiveSummary() {
         The full discussion, with English subtitles, is available on
         ISP-Myanmar’s website and YouTube channel.
       </p>
-        <DownloadSection content={downloadContents}/>
+      <div className={'mb-10'}>
+        <DownloadSection content={downloadContents} />
+      </div>
+      <Image
+        className={'w-full h-auto object-cover'}
+        src={
+          'https://ispmyanmar.com/wp-content/uploads/2025/11/Blockage-Survey_Eng_Map.jpg'
+        }
+        alt={'Blockage Survey Map'}
+        width={600}
+        height={700}
+      />
     </div>
   )
 }
