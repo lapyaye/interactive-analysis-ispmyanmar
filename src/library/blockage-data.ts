@@ -4,7 +4,7 @@ import { CartesianLayout } from 'recharts/types/util/types'
 export const navItems = [
   {
     href: '#executive-summary',
-    label: 'Executive Summary',
+    label: 'Summary',
     id: 'executive-summary',
   },
   {
@@ -14,7 +14,7 @@ export const navItems = [
   },
   {
     href: '#healthcare-impacts',
-    label: '2. Impacts on the Healthcare Sector',
+    label: '2. Impacts on the Healthcare',
     id: 'healthcare-impacts',
   },
   {
@@ -24,7 +24,7 @@ export const navItems = [
   },
   {
     href: '#livelihood-crisis',
-    label: '4. The Livelihood Crisis and Coping Methods',
+    label: '4. Daily Struggles and Coping Mechanisms',
     id: 'livelihood-crisis',
   },
   {
@@ -34,10 +34,10 @@ export const navItems = [
   },
   {
     href: '#respondent-info',
-    label: 'Survey Respondent Information',
+    label: 'Respondent Demographics',
     id: 'respondent-info',
   },
-  { href: '#appendix', label: 'Appendix: Survey Methodology', id: 'appendix' },
+  { href: '#appendix', label: 'Survey Methodology', id: 'appendix' },
 ]
 
 // If you use interface to declare type, [key:string]: any will be needed
@@ -687,7 +687,7 @@ export const fig13SocialSecurityImpacts: SurveyData = {
       color: '#f07b72',
     },
     {
-      item: 'Increase in migration and displacement',
+      item: 'Increase in migration',
       count: 694,
       percentage: 68,
       color: '#33a853',

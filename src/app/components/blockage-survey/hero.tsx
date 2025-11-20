@@ -11,7 +11,7 @@ export default function Hero() {
             'md:text-3xl lg:text-5xl font-bold whitespace-nowrap backdrop-blur-xl py-5 px-3 lg:backdrop-blur-none'
           }
         >
-          Raising the Lamp&apos;s Wick High
+          Raising the Lantern&apos;s Wick High
         </h1>
         <div className={'px-3 py-5 my-8'}>
           <p
