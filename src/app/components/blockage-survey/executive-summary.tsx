@@ -1,6 +1,7 @@
 import { RedSquareIcon } from '@/app/components/chart-ui/red-square-icon'
 import DownloadSection from '@/app/components/blockage-survey/download'
 import { downloadContents } from '@/library/download-data'
+import DownloadButton from "@/app/components/blockage-survey/util/download-button";
 
 export default function ExecutiveSummary() {
   return (
@@ -66,8 +67,8 @@ export default function ExecutiveSummary() {
         <span className={'font-bold'}>a small minority</span> believed
         conditions <span className={'font-bold'}>“will get better.”</span>
       </p>
-      <p className={'mb-3'}>
-        These findings are preliminary rather than conclusive, underscoring the
+      <p className={'mb-5'}>
+        The survey findings are organized into five sections. These findings are preliminary rather than conclusive, underscoring the
         need for more comprehensive socioeconomic research. Some of the results
         were also discussed in the October 18, 2025, episode of{' '}
         <span className={'font-bold'}>30 Minutes with the ISP</span>, titled{' '}
@@ -80,8 +81,9 @@ export default function ExecutiveSummary() {
         The full discussion, with English subtitles, is available on
         ISP-Myanmar’s website and YouTube channel.
       </p>
-      <div>
-        <DownloadSection content={downloadContents} />
+      <div className={'flex flex-col items-center lg:hidden'}>
+        {/*<DownloadSection content={downloadContents} />*/}
+          <DownloadButton text={'Download PDF'} href={'/'}/>
       </div>
     </div>
   )

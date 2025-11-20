@@ -9,7 +9,7 @@ export default function DownloadSection({
   return (
     <div
       className={
-        'mt-10 flex flex-col justify-center items-center bg-gray-100 p-5 lg:w-2/3 mx-auto'
+        'mt-10 lg:hidden flex flex-col justify-center items-center bg-gray-100 p-5 lg:w-2/3 mx-auto'
       }
     >
       <p className={'text-sm font-medium'}>Download the publication here.</p>
