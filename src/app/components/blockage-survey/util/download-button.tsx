@@ -9,21 +9,22 @@ const baseClasses = `
     p-2 
     rounded-sm 
     transition-colors 
-    shadow-md 
     cursor-pointer 
     min-w-30
     m-2
     focus:outline-none
   `
 export default function DownloadButton({
+  className='',
   text,
   href,
 }: {
+  className?: string
   text: string
   href: string
 }) {
   return (
-    <Link className={baseClasses} target={'_blank'} href={href}>
+    <Link className={baseClasses+' '+className} target={'_blank'} href={href}>
       {text}
     </Link>
   )

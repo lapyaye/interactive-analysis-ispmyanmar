@@ -80,7 +80,6 @@ export default function ExecutiveSummary() {
         ISP-Myanmar’s website and YouTube channel.
       </p>
       <div className={'flex flex-col items-center lg:hidden'}>
-        {/*<DownloadSection content={downloadContents} />*/}
           <DownloadButton text={'Download PDF'} href={'/'}/>
       </div>
     </div>
