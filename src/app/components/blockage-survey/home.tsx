@@ -79,15 +79,20 @@ export default function Home() {
             </div>
             <div className={'my-3 flex flex-col items-center bg-gray-100'}>
               <Image
-                className={'w-full'}
+                className={'w-full h-[260]'}
                 src={
-                  'https://ispmyanmar.com/burmese/wp-content/uploads/2025/11/Blockage-Survey_GBC-717x1024.jpg'
+                  'https://ispmyanmar.com/wp-content/uploads/2025/11/BSurvey_ENG_Cover.jpg'
                 }
                 alt={'Blockage Survey'}
                 width={200}
                 height={300}
               />
-              <DownloadButton text={'Download PDF'} href={'/'} />
+              <DownloadButton
+                text={'Download PDF'}
+                href={
+                  'https://ispmyanmar.com/wp-content/uploads/2025/11/Raising-the-Lanterns-Wick-High.pdf'
+                }
+              />
             </div>
           </div>
         </aside>

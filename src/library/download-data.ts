@@ -8,7 +8,7 @@ export const downloadContents: DownloadContent[] = [
   {
     id: 1,
     text: 'English Version',
-    href: '#',
+    href: 'https://ispmyanmar.com/wp-content/uploads/2025/11/Raising-the-Lanterns-Wick-High.pdf',
   },
   {
     id: 2,

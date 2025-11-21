@@ -83,7 +83,12 @@ export default function ExecutiveSummary() {
         ISP-Myanmar’s website and YouTube channel.
       </p>
       <div className={'flex flex-col items-center lg:hidden'}>
-        <DownloadButton text={'Download PDF'} href={'/'} />
+        <DownloadButton
+          text={'Download PDF'}
+          href={
+            'https://ispmyanmar.com/wp-content/uploads/2025/11/Raising-the-Lanterns-Wick-High.pdf'
+          }
+        />
       </div>
     </div>
   )
