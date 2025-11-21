@@ -15,7 +15,7 @@ const baseClasses = `
     focus:outline-none
   `
 export default function DownloadButton({
-  className='',
+  className = '',
   text,
   href,
 }: {
@@ -24,7 +24,11 @@ export default function DownloadButton({
   href: string
 }) {
   return (
-    <Link className={baseClasses+' '+className} target={'_blank'} href={href}>
+    <Link
+      className={baseClasses + ' ' + className}
+      target={'_blank'}
+      href={href}
+    >
       {text}
     </Link>
   )

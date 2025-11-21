@@ -42,10 +42,9 @@ export default function Chapter4() {
         reported a widespread increase in theft, burglary, and fraud, alongside
         a pervasive rise in anxiety and worry by{' '}
         <span className={'font-bold'}>80 percent (811 respondents)</span>. The
-        crisis has spurred an increase in both migration and displacement,
-        reported by{' '}
+        crisis has spurred an increase in migration, reported by{' '}
         <span className={'font-bold'}>68 percent (694 respondents)</span>, and a
-        rise in people engaging in illegal work, reported by
+        rise in people engaging in illegal work, reported by{' '}
         <span className={'font-bold'}>44 percent (447 respondents)</span>.
         Alarmingly, a rise in domestic violence was reported by{' '}
         <span className={'font-bold'}>31 percent (312 respondents)</span>; an

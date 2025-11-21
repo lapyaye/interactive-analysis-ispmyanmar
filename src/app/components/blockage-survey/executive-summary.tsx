@@ -1,5 +1,5 @@
 import { RedSquareIcon } from '@/app/components/chart-ui/red-square-icon'
-import DownloadButton from "@/app/components/blockage-survey/util/download-button";
+import DownloadButton from '@/app/components/blockage-survey/util/download-button'
 
 export default function ExecutiveSummary() {
   return (
@@ -12,25 +12,23 @@ export default function ExecutiveSummary() {
       </h3>
       <p className={'mb-3'}>
         In late September 2025, ISP-Myanmar conducted a nationwide survey to
-        assess how conflict-related trade route blockages have affected the
-        public. A total of{' '}
-        <span className={'font-bold'}>1,015 respondents</span> from{' '}
+        assess how conflict-related trade disruptions have affected the public.
+        A total of <span className={'font-bold'}>1,015 respondents</span> from{' '}
         <span className={'font-bold'}>85 townships</span> across all 15 regions
         and states of Myanmar, including the Naypyitaw Council Territory,
         participated in the study.
       </p>
       <p className={'mb-3'}>
-        Survey findings reveal that trade blockages have caused{' '}
+        Survey findings reveal that trade disruptions have caused{' '}
         <span className={'font-bold'}>
           shortages of daily consumer goods and basic medicines
         </span>
         , and prices for these goods have increased by{' '}
-        <span className={'font-bold'}>half to twice</span>, or even three or
-        four times, in some areas. As Myanmar relies heavily on imports for
-        western medicine, the healthcare sector has been hit particularly hard:
-        medicine shortages and price surges have left many people struggling to
-        reach hospitals and clinics. Livelihoods have also deteriorated, forcing
-        many{' '}
+        <span className={'font-bold'}>one and a half to twice</span>, or even
+        three or four times, in some areas. The healthcare sector has been hit
+        hard, particularly due to medicine shortages, price surges, and
+        difficult access to healthcare facilities. Livelihoods have also
+        deteriorated, forcing many{' '}
         <span className={'font-bold'}>
           to switch jobs or struggle with more restricted income
         </span>
@@ -44,11 +42,15 @@ export default function ExecutiveSummary() {
         country’s economic system. Survey results also suggest that the{' '}
         <span className={'font-bold'}>
           SSPC’s administrative apparatus has limited capacity to provide relief
+          and promote wellbeing of the citizens
         </span>
         . Similarly, the ability of Ethnic Armed Organizations (EAOs), local
         defense forces (PDFs and LPDFs), and the National Unity Government (NUG)
         to offer meaningful assistance remains{' '}
-        <span className={'font-bold'}>severely limited</span>.
+        <span className={'font-bold'}>
+          severely limited as alternative service providers
+        </span>
+        .
       </p>
       <p className={'mb-3'}>
         Respondents felt that they do not have enough for their needs compared
@@ -66,9 +68,10 @@ export default function ExecutiveSummary() {
         conditions <span className={'font-bold'}>“will get better.”</span>
       </p>
       <p className={'mb-5'}>
-        The survey findings are organized into five sections. These findings are preliminary rather than conclusive, underscoring the
-        need for more comprehensive socioeconomic research. Some of the results
-        were also discussed in the October 18, 2025, episode of{' '}
+        The survey findings are organized into five sections. These findings are
+        preliminary rather than conclusive, underscoring the need for more
+        comprehensive socioeconomic research. Some of the results were also
+        discussed in the October 18, 2025, episode of{' '}
         <span className={'font-bold'}>30 Minutes with the ISP</span>, titled{' '}
         <a
           href="https://ispmyanmar.com/event/the-spirit-is-willing-but-the-flesh-is-weak/"
@@ -80,7 +83,7 @@ export default function ExecutiveSummary() {
         ISP-Myanmar’s website and YouTube channel.
       </p>
       <div className={'flex flex-col items-center lg:hidden'}>
-          <DownloadButton text={'Download PDF'} href={'/'}/>
+        <DownloadButton text={'Download PDF'} href={'/'} />
       </div>
     </div>
   )

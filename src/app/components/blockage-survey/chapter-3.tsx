@@ -12,10 +12,10 @@ export default function Chapter3() {
         <RedSquareIcon /> 3. Impacts on Livelihoods
       </h3>
       <p className={'lg:w-full'}>
-        The conflict-driven blockages along trade routes have also affected the
-        livelihoods of the respondents and their households. When asked whether
-        there had been changes to their job/livelihood within 60 days before
-        September 23, 2025,{' '}
+        The conflict-driven disruptions along trade routes have also affected
+        the livelihoods of the respondents and their households. When asked
+        whether there had been changes to their job or livelihood within 60 days
+        before September 23, 2025,{' '}
         <span className={'font-bold'}>36 percent (365 respondents)</span>{' '}
         reported that they or their family members had experienced such a
         change, while the other{' '}

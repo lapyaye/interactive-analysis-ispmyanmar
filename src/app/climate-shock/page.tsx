@@ -12,6 +12,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Myanmar Climate Shocks and Response Capacity',
+  description: 'Climate Shocks and Response Capacity in Myanmar – A Survey',
 }
 
 export default function Home() {

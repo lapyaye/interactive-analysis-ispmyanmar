@@ -28,7 +28,7 @@ export default function Chapter5() {
         reported the support of local charity groups and civil society
         organizations, respectively. In sharp contrast, institutional help was
         reported as minimal. The SSPC’s administrative capacity to provide
-        support is seen as minimal, while that of EAOs, local resistance forces
+        support is seen as minimal, while that of EAOs, local defense forces
         (PDFs and LPDFs), and the NUG remains limited (
         <a href="#fig14" className={'underline decoration-pink-600'}>
           see Figure 14
@@ -83,9 +83,7 @@ export default function Chapter5() {
         <span className={'font-bold'}>64 percent (647 respondents)</span>, was
         security, followed by healthcare services as the third pressing need, at{' '}
         <span className={'font-bold'}>57 percent (574 respondents)</span>. Over{' '}
-        <span className={'font-bold'}>
-          50 percent (more than 500 respondents)
-        </span>{' '}
+        <span className={'font-bold'}>half (more than 500 respondents)</span>{' '}
         cited food and transportation as an urgent need. Education was cited by
         the relatively smallest proportion of respondents, at{' '}
         <span className={'font-bold'}>35 percent (355 respondents)</span> (
@@ -107,7 +105,7 @@ export default function Chapter5() {
         reported that they can continue to struggle on. However,{' '}
         <span className={'font-bold'}>42 percent (424 respondents)</span>{' '}
         believe the situation is hopeless, while only{' '}
-        <span className={'font-bold'}>five percent (52 respondents)</span>
+        <span className={'font-bold'}>five percent (52 respondents) </span>
         expressed optimism, saying things will get better (
         <a href="#fig18" className={'underline decoration-pink-600'}>
           see Figure 18

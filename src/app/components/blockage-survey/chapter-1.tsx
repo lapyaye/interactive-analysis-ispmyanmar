@@ -36,7 +36,7 @@ export default function Chapter1() {
         The most common shortages were everyday consumer goods. Medicine
         shortages were the second most common, followed by dry food, basic food
         items and personal hygiene products.{' '}
-        <span className={'font-bold'}>Sixty-six percent (674 respondents)</span>
+        <span className={'font-bold'}>66 percent (674 respondents)</span>
         reported shortages of consumer goods, while{' '}
         <span className={'font-bold'}>61 percent (620 respondents)</span>
         cited shortages of basic medicines. Only{' '}

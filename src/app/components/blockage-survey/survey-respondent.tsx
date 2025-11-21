@@ -12,12 +12,12 @@ export default function SurveyRespondent() {
       </h3>
       <p className={'mb-3'}>
         A total of 1,015 respondents participated in the survey.{' '}
-        <span className={'font-bold'}>Fifty seven percent</span> were female
-        (579 respondents), followed by{' '}
+        <span className={'font-bold'}>57 percent</span> were female (579
+        respondents), followed by{' '}
         <span className={'font-bold'}>41 percent male</span> (417 respondents),
         and <span className={'font-bold'}>two percent</span> others (19
         respondents). The survey covered a mix of locations: urban areas, rural
-        areas, border areas, and Internally Displaced Person (IDP) camps.
+        areas, border areas, and IDP (Internally Displaced Person) camps.
         Participants were 18 years of age and older, with the 26–40 age group
         the largest, followed by those aged 41–60. In terms of monthly household
         income, <span className={'font-bold'}>24 percent</span> reported earning

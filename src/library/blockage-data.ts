@@ -650,13 +650,13 @@ export const fig12CopingStrategiesFull: SurveyData = {
     {
       item: 'Does not face significant hardship',
       count: 64,
-      percentage: 6,
+      percentage: 6.3,
       color: '#ff994d',
     },
     {
       item: 'Unable to cope',
       count: 63,
-      percentage: 6,
+      percentage: 6.2,
       color: '#46bdc6',
     },
     {
@@ -761,7 +761,7 @@ export const fig14AssistanceProviders: SurveyData = {
       color: '#ff6d02',
     },
     {
-      item: 'Local resistance forces (PDFs/LPDFs)',
+      item: 'Local defense forces (PDFs/LPDFs)',
       count: 47,
       percentage: 4.6,
       color: '#ff994d',

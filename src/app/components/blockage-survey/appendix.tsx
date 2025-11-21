@@ -1,7 +1,7 @@
 import { RedSquareIcon } from '@/app/components/chart-ui/red-square-icon'
 import DownloadSection from '@/app/components/blockage-survey/download'
 import { downloadContents } from '@/library/download-data'
-import DownloadButton from "@/app/components/blockage-survey/util/download-button";
+import DownloadButton from '@/app/components/blockage-survey/util/download-button'
 
 export default function Appendix() {
   return (
@@ -38,8 +38,8 @@ export default function Appendix() {
         </li>
         <li className={'py-1'}>include at least five women</li>
         <li className={'py-1'}>
-          represent all area types, including urban, rural, border, and IDP camp
-          residents
+          must reside in one of the area types: urban, rural, border, and IDP
+          camp residents
         </li>
         <li className={'py-1'}>be aged 18 or older</li>
       </ol>
@@ -63,12 +63,12 @@ export default function Appendix() {
           target={'_blank'}
           className={'underline decoration-pink-600 hover:no-underline'}
         >
-            Please find other research and publications here.
+          Please find other research and publications here.
         </a>
       </p>
-        <div className={'flex flex-col items-center lg:hidden'}>
-            <DownloadSection content={downloadContents} />
-        </div>
+      <div className={'flex flex-col items-center lg:hidden'}>
+        <DownloadSection content={downloadContents} />
+      </div>
     </div>
   )
 }
