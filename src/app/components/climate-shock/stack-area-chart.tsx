@@ -10,7 +10,7 @@ import {
   Label,
 } from 'recharts'
 import { StackAreaData } from '@/library/climate-shock-data'
-import { CustomTooltip } from '@/app/components/blockage-survey/util/custom-tooltip'
+import { CustomTooltip } from '@/app/components/climate-shock/util/custom-tooltip'
 import useIsMobile from '@/app/components/climate-shock/util/useIsMobile'
 
 export default function StackAreaChartApp({

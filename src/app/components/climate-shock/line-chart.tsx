@@ -11,7 +11,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts'
-import { CustomTooltip } from '@/app/components/blockage-survey/util/custom-tooltip'
+import { CustomTooltip } from '@/app/components/climate-shock/util/custom-tooltip'
 import useIsMobile from '@/app/components/climate-shock/util/useIsMobile'
 
 export default function LineChartApp({ payload }: { payload: LineChartData }) {

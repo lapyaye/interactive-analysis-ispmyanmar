@@ -14,7 +14,7 @@ export default function useAnimateOnScroll(figures: string[]) {
                 }
             })
         }
-        const observerOptions = { threshold: 0.1 } // trigger when 10% of chart is visible
+        const observerOptions = { threshold: 0.3 } // trigger when 30% of chart is visible
         observer.current = new IntersectionObserver(
             observerCallback,
             observerOptions,

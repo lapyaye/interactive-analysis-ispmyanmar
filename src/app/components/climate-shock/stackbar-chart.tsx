@@ -32,14 +32,6 @@ const CustomTooltip = ({
       {isVisible && (
         <div className="label bg-gray-100 p-3 text-sm opacity-95">
           <p className="font-bold mb-2">{`${payload[0].payload.name}`}</p>
-          {/*{payload.map((pld:any, index:number) => (*/}
-          {/*    <p className={" mb-1"} key={index} >*/}
-          {/*        {`${pld.name}:`} {<span style={{ color: pld.color, fontWeight: "bold" }}>{pld.value}</span>}*/}
-          {/*    </p>*/}
-          {/*))}*/}
-          {/*<p style={{ color: hoveredSegment.color }}>*/}
-          {/*    {`${hoveredSegment.name}: ${hoveredSegment.value}`}*/}
-          {/*</p>*/}
           <p className={' mb-1'}>
             {`${hoveredSegment.name}:`}{' '}
             {
@@ -131,7 +123,7 @@ export default function StackBarChartApp({
                   <XAxis
                     dataKey="name"
                     className={'text-xs font-bold'}
-                    style={{ fontSize: '12px' }}
+                    style={{ fontSize: '12px', fontWeight: 'bold' }}
                   />
                 )
               ) : (
