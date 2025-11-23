@@ -1,8 +1,9 @@
 import { RedSquareIcon } from '@/app/components/chart-ui/red-square-icon'
 import DownloadSection from '@/app/components/blockage-survey/download'
 import { downloadContents } from '@/library/download-data'
+import React from 'react'
 
-export default function Appendix() {
+function Appendix() {
   return (
     <div id={'appendix'} className={'mt-10'}>
       <h3 className={'font-medium flex items-center text-lg mb-5'}>
@@ -71,3 +72,4 @@ export default function Appendix() {
     </div>
   )
 }
+export default React.memo(Appendix)

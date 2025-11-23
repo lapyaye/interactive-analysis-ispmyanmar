@@ -10,16 +10,15 @@ import {
 } from '@/library/blockage-data'
 import BarChartApp from '@/app/components/chart-ui/bar-chart'
 import useAnimateOnScroll from '@/app/components/blockage-survey/util/animate-on-scroll'
+import React, { useMemo } from 'react'
 
-export default function Chapter1() {
-  const visibleIds = useAnimateOnScroll([
-    'fig1',
-    'fig2',
-    'fig3',
-    'fig4',
-    'fig5',
-    'fig6',
-  ])
+function Chapter1() {
+  const figures: string[] = useMemo(
+    () => ['fig1', 'fig2', 'fig3', 'fig4', 'fig5', 'fig6'],
+    [],
+  )
+
+  const visibleIds = useAnimateOnScroll(figures)
 
   return (
     <div id="commodity-shortages" className={'mt-10'}>
@@ -161,3 +160,4 @@ export default function Chapter1() {
     </div>
   )
 }
+export default React.memo(Chapter1)

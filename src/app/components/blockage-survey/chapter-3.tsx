@@ -4,8 +4,13 @@ import {
   fig10LivelihoodChange,
   fig11IncomeChange,
 } from '@/library/blockage-data'
+import React, { useMemo } from 'react'
+import useAnimateOnScroll from '@/app/components/blockage-survey/util/animate-on-scroll'
 
-export default function Chapter3() {
+function Chapter3() {
+  const figures: string[] = useMemo(() => ['fig10', 'fig11'], [])
+
+  const visibleIds = useAnimateOnScroll(figures)
   return (
     <div id="livelihood-impacts" className={'mt-10'}>
       <h3 className={'font-medium flex items-center text-lg mb-5'}>
@@ -28,9 +33,11 @@ export default function Chapter3() {
       </p>
       <div
         id={'fig10'}
-        className={'w-full mt-10 mb-8 border-t-2 border-blue-300'}
+        className={`opacity-0 ${visibleIds.includes('fig10') ? 'opacity-100' : ''} transition-all duration-800 lg:w-full mt-10 mb-8 border-t-2 border-blue-300`}
       >
-        <PieChartApp props={fig10LivelihoodChange} />
+        {visibleIds.includes('fig10') && (
+          <PieChartApp props={fig10LivelihoodChange} />
+        )}
       </div>
       <p className={'lg:w-full'}>
         When asked whether their income had changed,{' '}
@@ -52,10 +59,13 @@ export default function Chapter3() {
       </p>
       <div
         id={'fig11'}
-        className={'w-full mt-10 mb-8 border-t-2 border-blue-300'}
+        className={`opacity-0 ${visibleIds.includes('fig11') ? 'opacity-100' : ''} transition-all duration-800 lg:w-full mt-10 mb-8 border-t-2 border-blue-300`}
       >
-        <PieChartApp props={fig11IncomeChange} />
+        {visibleIds.includes('fig11') && (
+          <PieChartApp props={fig11IncomeChange} />
+        )}
       </div>
     </div>
   )
 }
+export default React.memo(Chapter3)

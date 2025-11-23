@@ -1,4 +1,6 @@
-export default function Hero() {
+import React from 'react'
+
+function Hero() {
   return (
     <div
       className={
@@ -34,3 +36,4 @@ export default function Hero() {
     </div>
   )
 }
+export default React.memo(Hero)
