@@ -8,8 +8,16 @@ import {
   fig18OutlookOnSituation,
 } from '@/library/blockage-data'
 import PieChartApp from '@/app/components/chart-ui/pie-chart'
+import React, { useMemo } from 'react'
+import useAnimateOnScroll from '@/app/components/blockage-survey/util/animate-on-scroll'
 
-export default function Chapter5() {
+function Chapter5() {
+  const figures: string[] = useMemo(
+    () => ['fig14', 'fig15', 'fig16', 'fig17', 'fig18'],
+    [],
+  )
+
+  const visibleIds = useAnimateOnScroll(figures)
   return (
     <div id="support-capacity" className={'mt-10'}>
       <h3 className={'font-medium flex items-center text-lg mb-5'}>
@@ -37,9 +45,11 @@ export default function Chapter5() {
       </p>
       <div
         id={'fig14'}
-        className={'lg:w-full mt-10 mb-8 border-t-2 border-blue-300'}
+        className={`opacity-0 ${visibleIds.includes('fig14') ? 'opacity-100' : ''} transition-all duration-800 lg:w-full mt-10 mb-8 border-t-2 border-blue-300`}
       >
-        <BarChartApp props={fig14AssistanceProviders} />
+        {visibleIds.includes('fig14') && (
+          <BarChartApp props={fig14AssistanceProviders} />
+        )}
       </div>
       <p className={'lg:w-full'}>
         Inquiring the question of whether the respondent and the family feel a
@@ -54,9 +64,11 @@ export default function Chapter5() {
       </p>
       <div
         id={'fig15'}
-        className={'w-full mt-10 mb-8 border-t-2 border-blue-300'}
+        className={`opacity-0 ${visibleIds.includes('fig15') ? 'opacity-100' : ''} transition-all duration-800 lg:w-full mt-10 mb-8 border-t-2 border-blue-300`}
       >
-        <PieChartApp props={fig15FeelingSufficiency} />
+        {visibleIds.includes('fig15') && (
+          <PieChartApp props={fig15FeelingSufficiency} />
+        )}
       </div>
       <p className={'lg:w-full'}>
         When asked to explain their responses, the respondents cited{' '}
@@ -71,9 +83,11 @@ export default function Chapter5() {
       </p>
       <div
         id={'fig16'}
-        className={'lg:w-full mt-10 mb-8 border-t-2 border-blue-300'}
+        className={`opacity-0 ${visibleIds.includes('fig16') ? 'opacity-100' : ''} transition-all duration-800 lg:w-full mt-10 mb-8 border-t-2 border-blue-300`}
       >
-        <BarChartApp props={fig16InsufficiencyReasons} />
+        {visibleIds.includes('fig16') && (
+          <BarChartApp props={fig16InsufficiencyReasons} />
+        )}
       </div>
       <p className={'lg:w-full'}>
         When asked about the most urgent need amid these immediate pressures,
@@ -94,9 +108,9 @@ export default function Chapter5() {
       </p>
       <div
         id={'fig17'}
-        className={'lg:w-full mt-10 mb-8 border-t-2 border-blue-300'}
+        className={`opacity-0 ${visibleIds.includes('fig17') ? 'opacity-100' : ''} transition-all duration-800 lg:w-full mt-10 mb-8 border-t-2 border-blue-300`}
       >
-        <BarChartApp props={fig17MainNeeds} />
+        {visibleIds.includes('fig17') && <BarChartApp props={fig17MainNeeds} />}
       </div>
       <p className={'lg:w-full'}>
         At the end of the survey, when summarizing their views about the ongoing
@@ -114,10 +128,13 @@ export default function Chapter5() {
       </p>
       <div
         id={'fig18'}
-        className={'w-full mt-10 mb-8 border-t-2 border-blue-300'}
+        className={`opacity-0 ${visibleIds.includes('fig18') ? 'opacity-100' : ''} transition-all duration-800 lg:w-full mt-10 mb-8 border-t-2 border-blue-300`}
       >
-        <PieChartApp props={fig18OutlookOnSituation} />
+        {visibleIds.includes('fig18') && (
+          <PieChartApp props={fig18OutlookOnSituation} />
+        )}
       </div>
     </div>
   )
 }
+export default React.memo(Chapter5)

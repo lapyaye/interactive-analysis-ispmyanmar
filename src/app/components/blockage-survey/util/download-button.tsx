@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import React from 'react'
 const baseClasses = `
     bg-red-500
     inline-block 
@@ -14,7 +15,7 @@ const baseClasses = `
     m-2
     focus:outline-none
   `
-export default function DownloadButton({
+function DownloadButton({
   className = '',
   text,
   href,
@@ -33,3 +34,4 @@ export default function DownloadButton({
     </Link>
   )
 }
+export default React.memo(DownloadButton)

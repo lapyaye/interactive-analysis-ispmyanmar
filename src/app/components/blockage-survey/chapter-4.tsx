@@ -4,8 +4,13 @@ import {
   fig13SocialSecurityImpacts,
 } from '@/library/blockage-data'
 import BarChartApp from '@/app/components/chart-ui/bar-chart'
+import React, { useMemo } from 'react'
+import useAnimateOnScroll from '@/app/components/blockage-survey/util/animate-on-scroll'
 
-export default function Chapter4() {
+function Chapter4() {
+  const figures: string[] = useMemo(() => ['fig12', 'fig13'], [])
+
+  const visibleIds = useAnimateOnScroll(figures)
   return (
     <div id="livelihood-crisis" className={'mt-10'}>
       <h3 className={'font-medium flex items-center text-lg mb-5'}>
@@ -31,9 +36,11 @@ export default function Chapter4() {
       </p>
       <div
         id={'fig12'}
-        className={'lg:w-full mt-10 mb-8 border-t-2 border-blue-300'}
+        className={`opacity-0 ${visibleIds.includes('fig12') ? 'opacity-100' : ''} transition-all duration-800 lg:w-full mt-10 mb-8 border-t-2 border-blue-300`}
       >
-        <BarChartApp props={fig12CopingStrategiesFull} />
+        {visibleIds.includes('fig12') && (
+          <BarChartApp props={fig12CopingStrategiesFull} />
+        )}
       </div>
       <p className={'lg:w-full'}>
         Inquiring into the social impact of the economic crisis, the survey
@@ -60,10 +67,13 @@ export default function Chapter4() {
       </p>
       <div
         id={'fig13'}
-        className={'lg:w-full mt-10 mb-8 border-t-2 border-blue-300'}
+        className={`opacity-0 ${visibleIds.includes('fig13') ? 'opacity-100' : ''} transition-all duration-800 lg:w-full mt-10 mb-8 border-t-2 border-blue-300`}
       >
-        <BarChartApp props={fig13SocialSecurityImpacts} />
+        {visibleIds.includes('fig13') && (
+          <BarChartApp props={fig13SocialSecurityImpacts} />
+        )}
       </div>
     </div>
   )
 }
+export default React.memo(Chapter4)

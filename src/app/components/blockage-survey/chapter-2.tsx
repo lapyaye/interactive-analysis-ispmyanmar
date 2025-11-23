@@ -6,8 +6,13 @@ import {
   fig09HealthAccess,
 } from '@/library/blockage-data'
 import BarChartApp from '@/app/components/chart-ui/bar-chart'
+import React, { useMemo } from 'react'
+import useAnimateOnScroll from '@/app/components/blockage-survey/util/animate-on-scroll'
 
-export default function Chapter2() {
+function Chapter2() {
+  const figures: string[] = useMemo(() => ['fig7', 'fig8', 'fig9'], [])
+
+  const visibleIds = useAnimateOnScroll(figures)
   return (
     <div id="healthcare-impacts" className={'mt-10'}>
       <h3 className={'font-medium flex items-center text-lg mb-5'}>
@@ -34,15 +39,19 @@ export default function Chapter2() {
       </p>
       <div
         id={'fig7'}
-        className={'w-full mt-10 mb-8 border-t-2 border-blue-300'}
+        className={`opacity-0 ${visibleIds.includes('fig7') ? 'opacity-100' : ''} transition-all duration-800 lg:w-full mt-10 mb-8 border-t-2 border-blue-300`}
       >
-        <PieChartApp props={fig07MedicineBuyDifficulty} />
+        {visibleIds.includes('fig7') && (
+          <PieChartApp props={fig07MedicineBuyDifficulty} />
+        )}
       </div>
       <div
         id={'fig8'}
-        className={'lg:w-full mt-10 mb-8 border-t-2 border-blue-300'}
+        className={`opacity-0 ${visibleIds.includes('fig8') ? 'opacity-100' : ''} transition-all duration-800 lg:w-full mt-10 mb-8 border-t-2 border-blue-300`}
       >
-        <BarChartApp props={fig08MedicineBuyReasons} />
+        {visibleIds.includes('fig8') && (
+          <BarChartApp props={fig08MedicineBuyReasons} />
+        )}
       </div>
       <p className={'lg:w-full'}>
         While <span className={'font-bold'}>60 percent (606 respondents)</span>{' '}
@@ -61,10 +70,13 @@ export default function Chapter2() {
       </p>
       <div
         id={'fig9'}
-        className={'w-full mt-10 mb-8 border-t-2 border-blue-300'}
+        className={`opacity-0 ${visibleIds.includes('fig9') ? 'opacity-100' : ''} transition-all duration-800 lg:w-full mt-10 mb-8 border-t-2 border-blue-300`}
       >
-        <PieChartApp props={fig09HealthAccess} />
+        {visibleIds.includes('fig9') && (
+          <PieChartApp props={fig09HealthAccess} />
+        )}
       </div>
     </div>
   )
 }
+export default React.memo(Chapter2)

@@ -2,8 +2,16 @@ import { RedSquareIcon } from '@/app/components/chart-ui/red-square-icon'
 import PieChartApp from '@/app/components/chart-ui/pie-chart'
 import { age, gender, income, location } from '@/library/blockage-data'
 import Image from 'next/image'
+import React, { useMemo } from 'react'
+import useAnimateOnScroll from '@/app/components/blockage-survey/util/animate-on-scroll'
 
-export default function SurveyRespondent() {
+function SurveyRespondent() {
+  const figures: string[] = useMemo(
+    () => ['gender', 'location', 'income', 'age'],
+    [],
+  )
+  const visibleIds = useAnimateOnScroll(figures)
+
   return (
     <div id="respondent-info" className={'mt-10'}>
       <h3 className={'font-medium flex items-center text-lg mb-5'}>
@@ -27,17 +35,29 @@ export default function SurveyRespondent() {
         million MMK.
       </p>
       <div className={'chart-grid grid grid-cols-1 xl:grid-cols-2 gap-4 my-10'}>
-        <div className={'border-t-2 border-blue-300 w-full'}>
-          <PieChartApp props={gender} />
+        <div
+          id={'gender'}
+          className={`opacity-0 ${visibleIds.includes('gender') ? 'opacity-100' : ''} transition-all duration-800 border-t-2 border-blue-300 w-full`}
+        >
+          {visibleIds.includes('gender') && <PieChartApp props={gender} />}
         </div>
-        <div className={'border-t-2 border-blue-300 w-full'}>
-          <PieChartApp props={location} />
+        <div
+          id={'location'}
+          className={`opacity-0 ${visibleIds.includes('location') ? 'opacity-100' : ''} transition-all duration-800 border-t-2 border-blue-300 w-full`}
+        >
+          {visibleIds.includes('location') && <PieChartApp props={location} />}
         </div>
-        <div className={'border-t-2 border-blue-300 w-full'}>
-          <PieChartApp props={income} />
+        <div
+          id={'income'}
+          className={`opacity-0 ${visibleIds.includes('income') ? 'opacity-100' : ''} transition-all duration-800 border-t-2 border-blue-300 w-full`}
+        >
+          {visibleIds.includes('income') && <PieChartApp props={income} />}
         </div>
-        <div className={'border-t-2 border-blue-300 w-full'}>
-          <PieChartApp props={age} />
+        <div
+          id={'age'}
+          className={`opacity-0 ${visibleIds.includes('age') ? 'opacity-100' : ''} transition-all duration-800 border-t-2 border-blue-300 w-full`}
+        >
+          {visibleIds.includes('age') && <PieChartApp props={age} />}
         </div>
       </div>
       <div>
@@ -54,3 +74,4 @@ export default function SurveyRespondent() {
     </div>
   )
 }
+export default React.memo(SurveyRespondent)

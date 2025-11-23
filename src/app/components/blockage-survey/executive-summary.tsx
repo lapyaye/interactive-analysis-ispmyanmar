@@ -1,7 +1,8 @@
 import { RedSquareIcon } from '@/app/components/chart-ui/red-square-icon'
 import DownloadButton from '@/app/components/blockage-survey/util/download-button'
+import React from 'react'
 
-export default function ExecutiveSummary() {
+function ExecutiveSummary() {
   return (
     <div id="executive-summary">
       <h2 className={'font-bold text-xl mb-5 uppercase'}>
@@ -93,3 +94,4 @@ export default function ExecutiveSummary() {
     </div>
   )
 }
+export default React.memo(ExecutiveSummary)

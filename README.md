@@ -19,4 +19,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Click to see the live website:
 
-[Interactive Analysis | ISP-Myanmar](interactive.ispmyanmar.com)
+[Interactive Analysis | ISP-Myanmar](https://interactive.ispmyanmar.com/)

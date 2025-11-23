@@ -1,13 +1,12 @@
 'use client'
 import Image from 'next/image'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { MdClose, MdMenu } from 'react-icons/md'
 import { navItems } from '@/library/blockage-data'
 
-export default function Header() {
+function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
   return (
     <header
       className={`sticky top-0 lg:static container mx-auto px-5 md:px-6 z-50 transition-all duration-300 bg-background/90 backdrop-blur-md`}
@@ -89,3 +88,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default React.memo(Header)
